@@ -75,7 +75,7 @@ namespace InitSetting
                     MessageBox.Show(Localizable.MessageBoxGraphicsMod, "Usage");
                 }
             }, false);
-            dhh = new PluginToggle("DHH", Localizable.ToggleDhh, Localizable.TooltipDhh, "DHH_AI4", delegate (bool b)
+            dhh = new PluginToggle("DHH", Localizable.ToggleDhh, Localizable.TooltipDhh, "DHH_HS2", delegate (bool b)
             {
                 if (b)
                 {

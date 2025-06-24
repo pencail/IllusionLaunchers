@@ -542,7 +542,7 @@ namespace InitSetting
 
             // Customization options
 
-            var versionPath = Path.GetFullPath(GameRootDirectory + _versioningLoc);
+            var versionPath = Path.GetFullPath(GameRootDirectory + _mCustomDir + _versioningLoc);
             if (File.Exists(versionPath))
             {
                 var verFileStream = new FileStream(versionPath, FileMode.Open, FileAccess.Read);
