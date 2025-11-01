@@ -1035,5 +1035,51 @@ namespace InitSetting {
                 return ResourceManager.GetString("TooltipBleeding", resourceCulture);
             }
         }
+
+        //IK插件
+        public static string ToggleAdvIKPlugin
+        {
+            get
+            {
+                return ResourceManager.GetString("ToggleAdvIKPlugin", resourceCulture);
+            }
+        }
+        public static string TooltipAdvIKPlugin
+        {
+            get
+            {
+                return ResourceManager.GetString("TooltipAdvIKPlugin", resourceCulture);
+            }
+        }
+        public static string MessageBoxAdvIKPlugin
+        {
+            get
+            {
+                return ResourceManager.GetString("MessageBoxAdvIKPlugin", resourceCulture);
+            }
+        }
+        //DHH暗黑版
+        public static string ToggleDhhDark
+        {
+            get
+            {
+                return ResourceManager.GetString("ToggleDhhDark", resourceCulture);
+            }
+        }
+        public static string TooltipDhhDark
+        {
+            get
+            {
+                return ResourceManager.GetString("TooltipDhhDark", resourceCulture);
+            }
+        }
+
+        public static string MessageBoxDHHDARK
+        {
+            get
+            {
+                return ResourceManager.GetString("MessageBoxDHHDARK", resourceCulture);
+            }
+        }
     }
 }

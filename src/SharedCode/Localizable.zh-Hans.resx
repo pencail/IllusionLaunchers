@@ -136,7 +136,7 @@
     <value>激活控制台</value>
   </data>
   <data name="ToggleDhh" xml:space="preserve">
-    <value>激活DHH</value>
+    <value>激活DHH普通版</value>
   </data>
   <data name="ToggleAiGraphics" xml:space="preserve">
     <value>激活AI Graphics</value>
@@ -298,7 +298,7 @@
     <value>高级图形选项。
 可以在游戏中使用P键进行配置。
 
-请注意，该选项不支持GraphicsMod！</value>
+请注意，该选项不支持GraphicsMod和DHH暗黑版！</value>
   </data>
   <data name="TooltipDhhPH" xml:space="preserve">
     <value>高跟鞋 Mod。
@@ -422,5 +422,23 @@ C:\Illusion\Koikatsu</value>
   </data>
   <data name="TooltipBleeding" xml:space="preserve">
     <value>允许安装实验性Mods到游戏中。</value>
+  </data>
+  <data name="MessageBoxAdvIKPlugin" xml:space="preserve">
+    <value>请注意，该选择不支持DHH暗黑版！</value>
+  </data>
+  <data name="MessageBoxDHHDARK" xml:space="preserve">
+    <value>请注意该选项与DHH普通版冲突，不支持IK插件</value>
+  </data>
+  <data name="ToggleAdvIKPlugin" xml:space="preserve">
+    <value>激活IK插件</value>
+  </data>
+  <data name="ToggleDhhDark" xml:space="preserve">
+    <value>激活DHH暗黑版</value>
+  </data>
+  <data name="TooltipAdvIKPlugin" xml:space="preserve">
+    <value>该选项不支持DHH暗黑版！</value>
+  </data>
+  <data name="TooltipDhhDark" xml:space="preserve">
+    <value>该选项与DHH普通版冲突！</value>
   </data>
 </root>

@@ -42,7 +42,7 @@ namespace InitSetting
 
         static PluginToggleManager()
         {
-            PluginToggle aighs2, aig, aig2, hs2, dhh = null;
+            PluginToggle aighs2, aig, aig2, hs2, dhh = null, AdvIKPlugin=null, DhhDark = null;
             aig = new PluginToggle("AI_Graphics", Localizable.ToggleAiGraphics, Localizable.TooltipGraphicsMod, "AI_Graphics", delegate (bool b)
             {
                 if (b)
@@ -83,9 +83,32 @@ namespace InitSetting
                     aig2.SetIsChecked(false);
                     hs2.SetIsChecked(false);
                     aighs2.SetIsChecked(false);
+                    DhhDark.SetIsChecked(false);
+                    AdvIKPlugin.SetIsChecked(true);
                     MessageBox.Show(Localizable.MessageBoxDHH, "Usage");
                 }
             }, false);
+            AdvIKPlugin = new PluginToggle("AdvIKPlugin", Localizable.ToggleAdvIKPlugin, Localizable.TooltipAdvIKPlugin, "HS2_AdvIKPlugin", delegate (bool b)
+            {
+                if(b)
+                {
+                    DhhDark.SetIsChecked(false);
+                    MessageBox.Show(Localizable.MessageBoxAdvIKPlugin, "Usage");
+                }
+            }, false);
+            DhhDark = new PluginToggle("DhhDark", Localizable.ToggleDhhDark, Localizable.TooltipDhhDark, "DHH_AI4", delegate (bool b)
+            {
+                if (b)
+                {
+                    aig.SetIsChecked(false);
+                    aig2.SetIsChecked(false);
+                    hs2.SetIsChecked(false);
+                    aighs2.SetIsChecked(false);
+                    dhh.SetIsChecked(false);
+                    AdvIKPlugin.SetIsChecked(false);
+                    MessageBox.Show(Localizable.MessageBoxDHHDARK, "Usage");
+                }
+            },false);
 
             _toggleList = new List<PluginToggle>
             {
@@ -94,6 +117,8 @@ namespace InitSetting
                 hs2,
                 aighs2,
                 dhh,
+                DhhDark,
+                AdvIKPlugin,
                 new PluginToggle("OfflineMode", "Enable Offline Mode", "Disallows online connectivity, allowing the game to be played offline", "WebRequestBlocker", null, false),
                 new PluginToggle("DHHPH", Localizable.ToggleDhh, Localizable.TooltipDhhPH, "ProjectHighHeel", null, true),
                 new PluginToggle("GgmodForPlayClub", Localizable.ToggleGGmod, Localizable.TooltipGGmod, "GgmodForPlayClub", null, true),
